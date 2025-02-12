@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9098/9098495.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="WeatherData">
+
+      <div class="location">
+        <h2 id="city"></h2>
+        <span id="country"></span>
+      </div>
+
+      <div class="current-weather">
+        
+        <img id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather icon" style="width: 60px;height: 60px;">
+
+
+        <div class="temperature">
+          <span id="temperature"></span>
+          <span id="unit">°C</span>
+        </div>
+
+        <div id="description"></div>
+      </div>
+
+      <div class="additional-info">
+
+        <div>
+          <span>humidity:</span>
+          <span id="humidity"></span>
+        </div>
+
+        <div>
+          <span>Wind speed:</span>
+          <span id="windSpeed"></span>
+        </div>
+
+        <div>
+          <span>pressure:</span>
+          <span id="pressure"></span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script src="Script.js"></script>
+
+</html>
