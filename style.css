@@ -1,72 +1,103 @@
-body{
+body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 100vh;
     background-color: skyblue;
+    margin: 0;
 }
 
-.container{
-    background-color: #ffffff8e;
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 400px;
 }
-h1{
+
+h1 {
     margin-bottom: 20px;
 }
 
-.search-bar input{
+.search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     width: 200px;
-
 }
 
-.search-bar button{
+.search-bar button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-
 }
 
-#WeatherData{
+#WeatherData {
     margin-top: 20px;
 }
-.location{
+
+.location {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.current-weather{
+.current-weather {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.temprature{
+.current-weather img {
+    width: 60px;
+    height: 60px;
+}
+
+.temperature {
     font-size: 48px;
+    margin-left: 10px;
+}
+
+#description {
+    font-size: 18px;
     margin-top: 10px;
 }
 
-#description{
-    font-size: 18px;
+.additional-info {
     margin-top: 20px;
 }
 
-.additional-info{
-    display: grid;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.additional-info div{
+.additional-info div {
     text-align: left;
+}
+
+/* Forecast Styling */
+#forecast {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#forecastContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.forecast-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80px;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
 }
